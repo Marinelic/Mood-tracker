@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Mood Tracker</title>
+</head>
+<body>
+    <form id="mood-form">
+      <label class="field-label">How do you feel today?</label>
+
+      <div class="mood-options" id="mood-options">
+        <!-- We’ll handle selection in JS -->
+        <button type="button" class="mood-btn" data-mood="happy">😀</button>
+        <button type="button" class="mood-btn" data-mood="okay">😐</button>
+        <button type="button" class="mood-btn" data-mood="sad">😢</button>
+        <button type="button" class="mood-btn" data-mood="angry">😡</button>
+        <button type="button" class="mood-btn" data-mood="tired">😴</button>
+      </div>
+
+      <!-- Hidden input where we store the selected mood -->
+      <input type="hidden" id="mood" name="mood" />
+
+      <label for="note" class="field-label">Add a note (optional)</label>
+      <textarea id="note" rows="3" placeholder="Example: Felt anxious but had coffee with a friend..."></textarea>
+
+      <button type="submit" class="primary-btn">Save mood</button>
+    </form>
+
+
+    <div class="history-header">
+      <h2>History</h2>
+      <button id="clear-btn" class="secondary-btn">Clear all</button>
+    </div>
+
+    <ul id="mood-list" class="mood-list">
+      <!-- JS will add items here -->
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
