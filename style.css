@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #fafadc;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+/* .app {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+} */
+
+h1 {
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.field-label {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+
+.mood-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 12px;
+}
