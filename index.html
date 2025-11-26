@@ -8,7 +8,7 @@
     <title>Mood Tracker</title>
 </head>
 <body>
-    <form id="mood-form">
+    <form id="mood-form" class="mood-container">
       <label class="field-label">How do you feel today?</label>
 
       <div class="mood-options" id="mood-options">
@@ -26,14 +26,17 @@
       <label for="note" class="field-label">Add a note (optional)</label>
       <textarea id="note" rows="3" placeholder="Example: Felt anxious but had coffee with a friend..."></textarea>
 
-      <button type="submit" class="primary-btn">Save mood</button>
+      <div class="button-row">
+        <button type="submit" class="primary-btn">Save mood</button>
+        <button id="clear-btn" class="secondary-btn">Clear all</button>
+      </div>
     </form>
 
 
-    <div class="history-header">
+    <!-- <div class="history-header">
       <h2>History</h2>
-      <button id="clear-btn" class="secondary-btn">Clear all</button>
-    </div>
+      
+    </div> -->
 
     <ul id="mood-list" class="mood-list">
       <!-- JS will add items here -->
